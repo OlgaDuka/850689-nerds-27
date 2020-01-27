@@ -31,8 +31,33 @@
 
 		<main>
 		  <h1>Каталог сайтов</h1>
+		  <div>
+		  	<h3>Сортировать:</h3>
+		  	<ul>
+		  		<li>
+		  			<p>по цене</p>
+		  		</li>
+		  		<li>
+		  			<p>по типу</p>
+		  		</li>
+		  		<li>
+		  			<p>по названию</p>
+		  		</li>
+		  		<li>
+		  			<img src="img/down.svg" width="" height="" alt="">
+		  		</li>
+		  		<li>
+		  			<img src="img/up.svg" width="" height="" alt="">
+		  		</li>
+		  	</ul>
+		  </div>
 		  <section>
 		    <h2>Фильтр каталога</h2>
+		    <h3>Стоимость:</h3>
+		    <!--Здесь будет ползунок и значения от и до-->
+		    
+
+		    <h3>Сетка:</h3>
 		    <ul>
 		    	<li>
 		    		<input type="radio" checked name="dot" id="adapt"/>
@@ -47,9 +72,7 @@
 		    		<label for="fix">Фиксированнная</label>
 		    	</li>
 		    </ul>
-		  </section>
-		  <section>
-		    <h2>Особенности:</h2>
+		    <h3>Особенности:</h3>
 		    <ul>
 		    	<li>
 		    		<input type="checkbox" checked name="dot1" id="slider"/>
@@ -114,9 +137,9 @@
 		      	</div>
 		      </li>
 		      <li>
-		          <a href="catalog-item4.html">
-		          	<img src="img/mishka.jpg" width="" height="" alt="">
-		          </a>
+		        <a href="catalog-item4.html">
+		        	<img src="img/mishka.jpg" width="" height="" alt="">
+		        </a>
 		        <div>
 		        	<h3>
 		        		<a href="catalog-item4.html">MISHKA</a>
@@ -126,9 +149,9 @@
 		      	</div>
 		      </li>
 		      <li>
-		          <a href="catalog-item5.html">
-		          	<img src="img/a_plus.jpg" width="" height="" alt="">
-		          </a>
+		        <a href="catalog-item5.html">
+		          <img src="img/a_plus.jpg" width="" height="" alt="">
+		        </a>
 		        <div>
 		       		<h3>
 		        		<a href="catalog-item5.html">A PLUS</a>
@@ -149,31 +172,49 @@
 		        	<button type="button">9900 Руб.</button>
 		      	</div>
 		      </li>
-		    </ul>      
-		  </section>
-		  <section>
-		   <!-- здесь будет переключение страниц --> 	
-		 	</section>
-		 	<section>
-		  <!-- здесь будет карта -->
-			</section> 
+		    </ul>
+		    <ul><!--Переключение страниц-->
+          <li>
+          	<a href="#">1</a>
+          </li>
+          <li>
+          	<a href="#">2</a>
+          </li>
+          <li>
+          	<a href="#">3</a>
+          </li>
+          <li>
+          	<a href="#">4</a>
+          </li>
+        </ul>      
+		  </section>	 
 		</main>
 		<footer>
-			<ul>
-				<li>
-					<a href="#">Вконтакте</a>
-				</li>
-				<li>
-					<a href="#">Фейсбук</a>
-				</li>
-				<li>
-					<a href="#">Инстаграм</a>
-				</li>
-			</ul>
+			<section><!--Здесь будет добавлена карта-->
+				<div>
+					<h3>NЁRDS DESIGN STUDIO</h3>
+					<p>191, Санкт-Петербург,<br>Ул. Б.Конюшенная, д.19/8</p>
+					<p>тел. +7(812) 275-75-75</p>
+					<button type="button">НАПИШИТЕ НАМ</button>
+				</div>
+			</section>
+			<section>
+				<ul>
+					<li>
+						<a href="#">Вконтакте</a>
+					</li>
+					<li>
+						<a href="#">Фейсбук</a>
+					</li>
+					<li>
+						<a href="#">Инстаграм</a>
+					</li>
+				</ul>
 				<div>
 					<h2>Давайте дружить, это выгодно!</h2>
 					<p>Скидка 10% для друзей из социальных сетей</p>
-				</div>				      	
+				</div>
+			</section>
 		</footer>
 	</body>
 </html>
