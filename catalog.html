@@ -97,7 +97,7 @@
 		   	<button type="button">Показать</button>
 		  </section>
 		  <section>
-		    <h2>Список шаблонов</h2>
+		    <h2 class="visually-hidden">Список шаблонов</h2>
 		   	<ul>
 		      <li>
 		      	<img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
@@ -178,6 +178,7 @@
 		</main>
 		<footer>
 			<section><!--Здесь будет добавлена карта-->
+				<h2 class="visually-hidden">Контакты</h2>
 				<div>
 					<h3>NЁRDS DESIGN STUDIO</h3>
 					<p>191, Санкт-Петербург,<br>Ул. Б.Конюшенная, д.19/8</p>
@@ -216,5 +217,25 @@
 				</div>
 			</section>				      	
 		</footer>
+		<!--popup форма обратной связи -->
+		<section>
+			<h2>Напишите нам</h2>
+    	<button type="button">Закрыть</button>
+    	<form action="https://echo.htmlacademy.ru/courses" method="post">
+     	 	<p>
+      		<label for="name">Ваше имя:</label>
+      		<input type="text" name="name" id="name-field" value="Имя Фамилия">
+    		</p>
+      	<p>
+      		<label for="email">Ваш e-mail:</label>
+      		<input type="email" name="email" id="email-field" value="email@example.com">
+      	</p>
+      	<p>Текст письма</p>
+      	<p>
+      		<textarea name="comment" id="comment-field" rows="5" cols="50">В свободной форме</textarea>
+      	</p>
+      	<button type="submit">Отправить</button>
+    	</form>
+    </section> 
 	</body>
 </html>

@@ -28,7 +28,7 @@
 			</nav>
 		</header>
 		<main>
-			<h1>Магазин готовых шаблонов</h1>	
+			<h1 class="visually-hidden">Магазин готовых шаблонов</h1>	
 				
 			<section>
 				<h2>Долго, дорого, скурпулезно.</h2>
@@ -37,7 +37,7 @@
 			</section>
 
 			<section>
-				<h2>Услуги студии</h2><!--Заголовок  будет скрыт -->
+				<h2 class="visually-hidden">Услуги студии</h2>
 				<ul>
 					<li>
 						<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
@@ -93,6 +93,7 @@
 				</aside>
 			</section>
 			<section>
+				<h2 class="visually-hidden">Наши партнёры</h2>
 				<ul>
 					<li>
 						<a href="#">
@@ -119,6 +120,7 @@
 		</main>
 		<footer>
 			<section><!--Здесь будет добавлена карта-->
+				<h2 class="visually-hidden">Контакты</h2>
 				<div>
 					<h3>NЁRDS DESIGN STUDIO</h3>
 					<p>191, Санкт-Петербург,<br>Ул. Б.Конюшенная, д.19/8</p>
@@ -127,7 +129,7 @@
 				</div>
 			</section>
 			<section>
-				<h2>Социальные сети</h2>
+				<h2 class="visually-hidden">Социальные сети</h2>
 				<ul>
 					<li>
 						<a href="#">
@@ -157,6 +159,26 @@
 				</div>
 			</section>				      	
 		</footer>
+		<!--popup форма обратной связи -->
+		<section>
+			<h2>Напишите нам</h2>
+			<button type="button">Закрыть</button>
+			<form action="https://echo.htmlacademy.ru/courses" method="post">
+     	 	<p>
+      		<label for="name">Ваше имя:</label>
+      		<input type="text" name="name" id="name-field" value="Имя Фамилия">
+				</p>
+				<p>
+      		<label for="email">Ваш e-mail:</label>
+      		<input type="email" name="email" id="email-field" value="email@example.com">
+      	</p>
+      	<p>Текст письма</p>
+      	<p>
+      		<textarea name="comment" id="comment-field" rows="5" cols="50">В свободной форме</textarea>
+      	</p>
+      	<button type="submit">Отправить</button>
+    	</form>
+    </section> 
 	</body>
 </html>
 
