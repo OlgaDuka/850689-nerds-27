@@ -26,10 +26,9 @@
 				</ul>
 				<button type="button">Корзина</button>		
 			</nav>
+			<h1 class="visually-hidden">Магазин готовых шаблонов</h1>
 		</header>
 		<main>
-			<h1 class="visually-hidden">Магазин готовых шаблонов</h1>	
-				
 			<section>
 				<h2>Долго, дорого, скурпулезно.</h2>
 				<p>Математически выверенный дизайн для вашего сайти или приложения.</p>
@@ -43,24 +42,25 @@
 						<img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
 						<h3>Веб-сайты</h3>
 						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-						<button type="button">ЗАКАЗАТЬ</button>
+						<p><a href="#">Заказать</a></p>
 					</li>
 					<li>
 						<img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
 						<h3>Приложения</h3>
 						<p>Покорите топ-10 приложений в AppStore и Google Play.</p>
-						<button type="button">ЗАКАЗАТЬ</button>
+						<p><a href="#">Заказать</a></p>
 					</li>
 					<li>
 						<img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
 						<h3>Презентации</h3>
 						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-						<button type="button">ЗАКАЗАТЬ</button>
+						<p><a href="#">Заказать</a></p>
 					</li>
 				</ul>
 			</section>
 
 			<section>
+				<h2 class="visually-hidden">О нас</h2>
 				<h2>Мы - маленькая, но гордая дизайн-студия из Краснодара</h2>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы</p>
 				<h3>Выполняем заказы на разработку:</h3>
@@ -122,10 +122,10 @@
 			<section><!--Здесь будет добавлена карта-->
 				<h2 class="visually-hidden">Контакты</h2>
 				<div>
-					<h3>NЁRDS DESIGN STUDIO</h3>
+					<h3>Nёrds design studio</h3>
 					<p>191, Санкт-Петербург,<br>Ул. Б.Конюшенная, д.19/8</p>
-					<p>тел. +7(812) 275-75-75</p>
-					<button type="button">НАПИШИТЕ НАМ</button>
+					<p><a href="tel:+78122757575">тел. +7(812) 275-75-75</a></p>
+					<p><a href="#">Напишите нам</a></p>
 				</div>
 			</section>
 			<section>
@@ -164,18 +164,18 @@
 			<h2>Напишите нам</h2>
 			<button type="button">Закрыть</button>
 			<form action="https://echo.htmlacademy.ru/courses" method="post">
-     	 	<p>
+     	 	<div>
       		<label for="name">Ваше имя:</label>
-      		<input type="text" name="name" id="name-field" value="Имя Фамилия">
-				</p>
-				<p>
+      		<input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+				</div>
+				<div>
       		<label for="email">Ваш e-mail:</label>
-      		<input type="email" name="email" id="email-field" value="email@example.com">
-      	</p>
-      	<p>Текст письма</p>
-      	<p>
+      		<input type="email" name="email" id="email-field" placeholder="email@example.com">
+      	</div>
+      	<div>
+      		<label for="comment">Текст письма</label>
       		<textarea name="comment" id="comment-field" rows="5" cols="50">В свободной форме</textarea>
-      	</p>
+      	</div>
       	<button type="submit">Отправить</button>
     	</form>
     </section> 

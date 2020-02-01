@@ -26,21 +26,21 @@
 				</ul>
 				<button type="button">Корзина</button>		
 			</nav>
+			<h1>Магазин готовых шаблонов</h1>
 		</header>
 
 		<main>
-		  <h1>Каталог сайтов</h1>
 		  <div>
 		  	<h3>Сортировать:</h3>
 		  	<ul>
 		  		<li>
-		  			<p>по цене</p>
+		  			<a href="#">по цене</a>
 		  		</li>
 		  		<li>
-		  			<p>по типу</p>
+		  			<a href="#">по типу</a>
 		  		</li>
 		  		<li>
-		  			<p>по названию</p>
+		  			<a href="#">по названию</a>
 		  		</li>
 		  		<li>
 		  			<button type="button">вниз</button>
@@ -51,51 +51,55 @@
 		  	</ul>
 		  </div>
 		  <section>
-		    <h2>Фильтр каталога</h2>
-		    <h3>Стоимость:</h3>
-		    <!--Здесь будет ползунок и значения от и до-->
-		    
-
-		    <h3>Сетка:</h3>
-		    <ul>
-		    	<li>
-		    		<input type="radio" checked name="dot" id="adapt"/>
-		    		<label for="adapt">Адаптивная</label>
-		    	</li>
-		    	<li>
-		    		<input type="radio" name="dot" id="rez"/>
-		    		<label for="rez">Резиновая</label>
-		    	</li>
-		    	<li>
-		    		<input type="radio" name="dot" id="fix"/>
-		    		<label for="fix">Фиксированнная</label>
-		    	</li>
-		    </ul>
-		    <h3>Особенности:</h3>
-		    <ul>
-		    	<li>
-		    		<input type="checkbox" checked name="dot1" id="slider"/>
-		    		<label for="slider">Слайдер</label>
-		    	</li>
-		    	<li>
-		    		<input type="checkbox" id="advantages"/>
-		    		<label for="advantages">Блок преимуществ</label>
-		    	</li>
-		    	<li>
-		    		<input type="checkbox" checked name="dot2" id="news"/>
-		    		<label for="news">Новости</label>
-		    	</li>
-		    	<li>
-		    		<input type="checkbox" id="gallery"/>
-		    		<label for="gallery">Галерея</label>
-		    	</li>
-		    	<li>
-		    		<input type="checkbox" id="basket"/>
-		    		<label for="basket">Корзина</label>
-		    	</li>
-		    </ul>
-		   	<button type="button">Показать</button>
-		  </section>
+		  	<form action="https://echo.htmlacademy.ru/courses" method="post">
+			    <h2>Фильтр каталога</h2>
+			    <h3>Стоимость:</h3>
+			    <!--Здесь будет ползунок и значения от и до-->
+			    <fieldset>
+				    <legend>Сетка:</legend>
+					  <ul>
+					  	<li>
+					    	<input type="radio" checked name="dot" id="adapt"/>
+					    	<label for="adapt">Адаптивная</label>
+					    </li>
+					    <li>
+					    	<input type="radio" name="dot" id="rez"/>
+					    	<label for="rez">Резиновая</label>
+					    </li>
+					    <li>
+					    	<input type="radio" name="dot" id="fix"/>
+					    	<label for="fix">Фиксированнная</label>
+					    </li>
+					  </ul>
+			  	</fieldset>
+				  <fieldset>
+				    <legend>Особенности:</legend>
+					  <ul>
+					    <li>
+					    	<input type="checkbox" checked name="slider" id="slider"/>
+					    	<label for="slider">Слайдер</label>
+					    </li>
+					    <li>
+					    	<input type="checkbox" name="advantages" id="advantages"/>
+					    	<label for="advantages">Блок преимуществ</label>
+					    </li>
+					    <li>
+					    	<input type="checkbox" checked name="news" id="news"/>
+					    	<label for="news">Новости</label>
+					    </li>
+					    <li>
+					    	<input type="checkbox" name="gallery" id="gallery"/>
+					    	<label for="gallery">Галерея</label>
+					    </li>
+					    <li>
+					    	<input type="checkbox" name="basket" id="basket"/>
+					    	<label for="basket">Корзина</label>
+					    </li>
+					  </ul>
+				  </fieldset>
+			  <button type="submit">Показать</button>
+				</form>
+			</section>
 		  <section>
 		    <h2 class="visually-hidden">Список шаблонов</h2>
 		   	<ul>
@@ -103,7 +107,7 @@
 		      	<img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
 		        <div>
 		        	<a href="catalog-item1.html">
-		        		<h3>SEDONA</h3>
+		        		<h3>Sedona</h3>
 		        	</a>
 		        	<p>Информационный сайт<br> для туристов</p>
 		        	<button type="button">9900 Руб.</button>
@@ -113,7 +117,7 @@
 		        <img src="img/pink.jpg" width="360" height="576" alt="Pink">
 		        <div>
 		        	<a href="catalog-item2.html">
-		        		<h3>PINK APP</h3>
+		        		<h3>Pink App</h3>
 		        	</a>
 		         	<p>Продуктивный лендинг<br> для iOS и Android</p>
 		         	<button type="button">9900 Руб.</button>
@@ -123,7 +127,7 @@
 		        <img src="img/barbershop.jpg" width="360" height="576" alt="Barbershop">
 		        <div>
 		        	<a href="catalog-item3.html">
-		        		<h3>BARBERSHOP</h3>
+		        		<h3>Barbershop</h3>
 		        	</a>
 		       	 	<p>Сайт салона красоты<br> Для мужчин,да.</p>
 		       		<button type="button">9900 Руб.</button>
@@ -133,7 +137,7 @@
 		        <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
 		        <div>
 		        	<a href="catalog-item4.html">
-		        		<h3>MISHKA</h3>
+		        		<h3>Mishka</h3>
 		        	</a>
 		        	<p>Интернет-магазин<br> вязанных игрушек</p>
 		        	<button type="button">9900 Руб.</button>
@@ -143,7 +147,7 @@
 		        <img src="img/aplus.jpg" width="360" height="576" alt="A_plus">
 		        <div>
 		        	<a href="catalog-item5.html">
-		        		<h3>A PLUS</h3>
+		        		<h3>A Plus</h3>
 		        	</a>
 		        	<p>Лендинг курсов повышения<br> квалификации</p>
 		        	<button type="button">9900 Руб.</button>
@@ -153,7 +157,7 @@
 		        <img src="img/kvast.jpg" width="360" height="576" alt="">
 		        <div>
 		        	<a href="catalog-item6.html">
-		        		<h3>КВАСТ</h3>
+		        		<h3>Кваст</h3>
 		        	</a>
 		        	<p>Промо-сайт производителя<br> крафтового кваса</p>
 		        	<button type="button">9900 Руб.</button>
@@ -180,10 +184,10 @@
 			<section><!--Здесь будет добавлена карта-->
 				<h2 class="visually-hidden">Контакты</h2>
 				<div>
-					<h3>NЁRDS DESIGN STUDIO</h3>
+					<h3>Nёrds design studio</h3>
 					<p>191, Санкт-Петербург,<br>Ул. Б.Конюшенная, д.19/8</p>
-					<p>тел. +7(812) 275-75-75</p>
-					<button type="button">НАПИШИТЕ НАМ</button>
+					<p><a href="tel:+78122757575">тел. +7(812) 275-75-75</a></p>
+					<p><a href="#">Напишите нам</a></p>
 				</div>
 			</section>
 			<section>
@@ -222,18 +226,18 @@
 			<h2>Напишите нам</h2>
     	<button type="button">Закрыть</button>
     	<form action="https://echo.htmlacademy.ru/courses" method="post">
-     	 	<p>
+     	 	<div>
       		<label for="name">Ваше имя:</label>
-      		<input type="text" name="name" id="name-field" value="Имя Фамилия">
-    		</p>
-      	<p>
+      		<input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+    		</div>
+      	<div>
       		<label for="email">Ваш e-mail:</label>
-      		<input type="email" name="email" id="email-field" value="email@example.com">
-      	</p>
-      	<p>Текст письма</p>
-      	<p>
+      		<input type="email" name="email" id="email-field" placeholder="email@example.com">
+      	</div>
+      	<div>
+      		<label for="comment">Текст письма</label>
       		<textarea name="comment" id="comment-field" rows="5" cols="50">В свободной форме</textarea>
-      	</p>
+      	</div>
       	<button type="submit">Отправить</button>
     	</form>
     </section> 
