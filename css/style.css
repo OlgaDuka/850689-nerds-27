@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -45,6 +44,9 @@ img {
   color: black;
   display: inline-block;
   border-radius: 3px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
 }
 
 .btn:hover,
@@ -62,6 +64,7 @@ img {
   background-color: #d7373b;
   color: #e06366;
 }
+
 .grey-button {
   background-color: #eeeeee;
   color: black; 
@@ -76,6 +79,36 @@ img {
   background-color: #d5d5d5;
   color: #959595;
 }
+
+.green-button {
+  background-color: #00ca74;
+  color: white;
+}
+
+.green-button:hover,
+.green-button:focus {
+  background-color: #00bc6c;
+}
+
+.green-button:active {
+  background-color: #00aa62;
+  color: #4dc491;  
+ }
+
+.yellow-button {
+  background-color: #efc84a;
+  color: white;
+}
+
+.yellow-button:hover,
+.yellow-button:focus {
+  background-color: #eab534;
+}
+
+.yellow-button:active {
+  background-color: #e5a722;
+  color: #edc265;  
+ }
 
 .navigation {
   text-transform: uppercase;
@@ -98,6 +131,7 @@ img {
 .basket-button:focus {
   color: #e74246;
 }
+
 .basket-button:active {
   color: #a6a6a6;
 }
@@ -147,9 +181,6 @@ img {
 .learn-more-button {
   width: 240px;
   height: 60px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
 }
 
 .services {
@@ -176,9 +207,6 @@ img {
   padding: 15px 10px;
   width: 160px;
   height: 50px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
 } 
 
 .service-item div {
@@ -252,7 +280,6 @@ list-style: none;
   line-height: 18px;
   font-weight: 400;
   color: #283136; 
-
 }
 
 .partners {
@@ -298,9 +325,6 @@ list-style: none;
   padding: 15px 10px;
   width: 220px;
   height: 50px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
 }
 
 .social {
@@ -347,9 +371,6 @@ list-style: none;
 .send-button {
   width: 260px;
   height: 50px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
 }
 
 .popup h2 {
@@ -435,9 +456,6 @@ list-style: none;
 .show-button {
   width: 260px;
   height: 50px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
 }
 
 
@@ -448,9 +466,6 @@ list-style: none;
 .buy-button {
   width: 200px;
   height: 50px;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
 }
 
 
@@ -487,7 +502,6 @@ list-style: none;
   list-style: none;
 }
 
-
 .pagination-item {
   padding: 15px 10px;
   width: 50px;
@@ -515,6 +529,7 @@ list-style: none;
   color: #000000;
   background-color: #ffffff;
 }
+
 .pag-next-button {
   width: 260px;
   height: 50px;
