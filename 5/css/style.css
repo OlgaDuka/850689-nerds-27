@@ -44,12 +44,37 @@ img {
   text-decoration: none;
   color: black;
   display: inline-block;
+  border-radius: 3px;
 }
 
 .btn:hover,
 .btn:focus,
 .btv:active {
   background-color: #e74246;
+}
+
+.red-button {
+  background-color: #fb565a;
+  color: white;
+}
+
+.red-button:active {
+  background-color: #d7373b;
+  color: #e06366;
+}
+.grey-button {
+  background-color: #eeeeee;
+  color: black; 
+}
+
+.grey-button:hover,
+.grey-button:focus {
+  background-color: #dfdfdf;
+}
+
+.grey-button:active {
+  background-color: #d5d5d5;
+  color: #959595;
 }
 
 .navigation {
@@ -122,19 +147,9 @@ img {
 .learn-more-button {
   width: 240px;
   height: 60px;
-  background-color: #fb565a;
-  font: inherit;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 3px;
-}
-
-.learn-more-button:active {
-  background-color: #d7373b;
-  color: #e06366;
 }
 
 .services {
@@ -161,19 +176,10 @@ img {
   padding: 15px 10px;
   width: 160px;
   height: 50px;
-  background-color: #fb565a;
-  font: inherit;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 3px;
 } 
-.order-button:active {
-  background-color: #d7373b;
-  color: #e06366;
-}
 
 .service-item div {
   width: 300px;
@@ -234,7 +240,6 @@ list-style: none;
 
 }
 
-
 .aside-table-value {
   font-size: 45px;
   line-height: 10,06px;
@@ -293,19 +298,9 @@ list-style: none;
   padding: 15px 10px;
   width: 220px;
   height: 50px;
-  background-color: #fb565a;
-  font: inherit;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 3px;
-}
-
-.write-us-button:active {
-  background-color: #d7373b;
-  color: #e06366;
 }
 
 .social {
@@ -352,19 +347,9 @@ list-style: none;
 .send-button {
   width: 260px;
   height: 50px;
-  background-color: #fb565a;
-  font: inherit;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 3px;
-}
-
-.send-button:active {
-  background-color: #d7373b;
-  color: #e06366;
 }
 
 .popup h2 {
@@ -450,25 +435,11 @@ list-style: none;
 .show-button {
   width: 260px;
   height: 50px;
-  background-color: #eeeeee;
-  font: inherit;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: black;
-  text-transform: uppercase;
-  border-radius: 3px; 
 }
 
-.show-button:hover,
-.show-button:focus {
-  background-color: #dfdfdf;
-}
-
-.show-button:active {
-  background-color: #d5d5d5;
-  color: #959595;
-}
 
 .templates {
 
@@ -477,20 +448,11 @@ list-style: none;
 .buy-button {
   width: 200px;
   height: 50px;
-  background-color: #fb565a;
-  font: inherit;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 3px;
 }
 
-.buy-button:active {
-  background-color: #d7373b;
-  color: #e06366; 
-}
 
 .templates h3 {
   font-size: 18px;
@@ -530,16 +492,11 @@ list-style: none;
   padding: 15px 10px;
   width: 50px;
   height: 50px;
-  background-color: #eeeeee;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
 }
 
-.pagination-item:hover,
-.pagination-item:focus {
-  background-color: #dfdfdf;
-}
 .pagination-item:active {
   background-color: #dfdfdf;
   opacity: 0.3;
@@ -556,7 +513,6 @@ list-style: none;
 .pagination-item-current:focus,
 .pagination-item-current:active {
   color: #000000;
-
   background-color: #ffffff;
 }
 .pag-next-button {
