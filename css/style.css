@@ -449,6 +449,8 @@ img {
 .sort {
   display: flex;
   flex-direction: row;
+  width: 760px;
+  justify-content: space-between;
 }
 
 .sort-list {
@@ -458,7 +460,7 @@ img {
 
 
 .sort-item {
- justify-content: space-between;
+  margin: 5px;
 }
 
 .sort h3 {
@@ -517,7 +519,7 @@ img {
 }
 
 .catalog-value {
-
+  margin-top: 17px;
 }
 
 .radiobutton-container {
