@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  width: 1440px;
+  margin: 0 auto;
   padding: 0;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
@@ -32,6 +33,8 @@ img {
   height: 1px;
   margin: -1px;
 }
+
+/*Свойства кнопок главной страницы*/
 
 .btn {
   font: inherit;
@@ -110,12 +113,40 @@ img {
   color: #edc265;  
  }
 
+/*Свойства кнопок закончились*/
+
 .navigation {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 30px;
   color: #101010;
   background-color: #eeeeee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-logo {
+  width: 160px;
+  height: 70px;
+  margin-left: 40px;
+  margin-top: 46px;
+}
+
+.site-navigation {
+  width: 440px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin-right: 76px;
+  margin-top: 74px;
+}
+
+.basket {
+  margin: 0;
+  padding-top: 60px;
+  padding-right: 31px;
 }
 
 .basket-button {
@@ -134,13 +165,6 @@ img {
 
 .basket-button:active {
   color: #a6a6a6;
-}
-.header-logo {
-
-}
-
-.site-navigation {
-  list-style: none;
 }
 
 .site-navigation a {
@@ -189,10 +213,18 @@ img {
 
 .services-list {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 140px;
+  padding: 0;
+  width: 1100px;
+  align-items: center;
 }
 
 .service-item {
-  text-align: left;
+  width: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 .service-item h3 {
@@ -257,7 +289,7 @@ img {
 }
 
 .about-list {
-list-style: none;
+  list-style: none;
 }
 
 .about-item {
@@ -328,22 +360,31 @@ list-style: none;
 }
 
 .social {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-list {
   list-style: none; 
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
 }
 
 .social-item {
+  display: flex;
+  justify-content: center;
   background-color: #e1e1e1;
   border-radius: 50%; 
   height: 80px;
   width: 80px;
+  margin: 3px;
+  margin-left: 5px;
 }
 
-.social-item-link svg {
-
+.social-item a {
+  display: flex;
+  align-items: center;
 }
 
 .footer-title {
@@ -355,6 +396,7 @@ list-style: none;
   line-height: 36px;
   font-weight: bold;
   color: black;
+  margin-right: 358px;
 }
 
 .footer-title p {
@@ -397,10 +439,28 @@ list-style: none;
   line-height: 55px;
   font-weight: 500;
   color: black;
+  height: 246px;
+  background-color: #eeeeee;
+  text-align: center;
+  margin: 0px;
+  padding-top: 71px;
 }
 
 .sort {
+  display: flex;
+  flex-direction: row;
+  width: 760px;
+  justify-content: space-between;
+}
 
+.sort-list {
+  display: flex;
+  list-style: none;
+}
+
+
+.sort-item {
+  margin: 5px;
 }
 
 .sort h3 {
@@ -426,8 +486,16 @@ list-style: none;
 
 }
 
-.catalog-filter {
+.catalog-container {
+  display: flex;
+  justify-content: space-between;
+}
 
+.catalog-filter {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 127px; 
 }
 
 .catalog-filter legend {
@@ -436,6 +504,7 @@ list-style: none;
   font-weight: bold;
   color: black;
   text-transform: uppercase; 
+  
 }
 
 .catalog-filter label {
@@ -445,12 +514,30 @@ list-style: none;
   color: #61686c;  
 }
 
-.radiobutton-list {
- list-style: none; 
+.catalog-value-container {
+ border: none;
 }
 
+.catalog-value {
+  margin-top: 17px;
+}
+
+.radiobutton-container {
+ border: none; 
+}
+
+.radiobutton-list {
+  list-style: none; 
+
+}
+
+.checkbox-container {
+  border: none; 
+}
+
+
 .checkbox-list {
- list-style: none; 
+  list-style: none; 
 }
 
 .show-button {
@@ -458,16 +545,18 @@ list-style: none;
   height: 50px;
 }
 
-
 .templates {
-
+  width: 760px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  margin-right: 139px;
 }
 
 .buy-button {
   width: 200px;
   height: 50px;
 }
-
 
 .templates h3 {
   font-size: 18px;
@@ -481,16 +570,25 @@ list-style: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
-  color: #666666; 
-   
+  color: #666666;    
 }
 
 .templates-list {
   list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .template-item {
+ width: 360px;
+ margin-bottom: 33px; 
+ margin-right: 40px;
+}
 
+.template-item:nth-child(2n) {
+  margin-right: 0;
 }
 
 .template-image {
@@ -498,8 +596,11 @@ list-style: none;
   height: 576px; 
   width: 360px;
 }
+
 .pagination-list {
   list-style: none;
+  display: flex;
+  margin-left: 490px;
 }
 
 .pagination-item {
@@ -509,6 +610,7 @@ list-style: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  margin-left: 11px; 
 }
 
 .pagination-item:active {
