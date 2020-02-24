@@ -8,7 +8,7 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-	  <header>
+	  <header class="top-header">
 			<nav class="navigation">
 				<a class="header-logo"  href="index.html">
 					<img src="img/nerds-logo.svg" width="160" height="70" alt="Логотип магазина «Нёрдс»">
@@ -20,8 +20,8 @@
 					<li>
 						<a href="news.html">Клиенты</a>
 					</li>
-					<li>
-						<a href="catalog.html">Магазин</a>
+					<li class="catalog-button">
+						<a class="current-page" href="catalog.html">Магазин</a>
 					</li>
 					<li>
 						<a href="contacts.html">Контакты</a>
@@ -37,10 +37,23 @@
 		  <div class="catalog-container">
 			  <section class="catalog-filter">
 					<h2 class="visually-hidden">Фильтр каталога</h2>
-					<form action="https://echo.htmlacademy.ru/courses" method="post">
-						<fieldset class="catalog-value-container"><!--Здесь будет ползунок и значения от и до-->
-							<legend class="catalog-value">Стоимость:</legend>	
-						</fieldset>
+					<form method="get" action="https://echo.htmlacademy.ru">
+		      <fieldset class="filter-item">
+		        <legend>Стоимость:</legend>
+		        <div class="range-filter">
+		          <div class="range-controls">
+		            <div class="scale">
+		              <div class="bar" style="margin-left: 20%; width: 30%"></div>
+		            </div>
+		            <div class="toggle toggle-min"></div>
+		            <div class="toggle toggle-max"></div>
+		          </div>
+		          <div class="price-controls">
+		            <label class="min-price">от <input name="min-price" type="number" value="0"></label>
+		            <label class="max-price">до <input name="max-price" type="number" value="15000"></label>
+		          </div>
+		        </div>
+		      </fieldset>
 						<fieldset class="radiobutton-container">
 							<legend>Сетка:</legend>
 						  <ul class="radiobutton-list">
@@ -100,10 +113,10 @@
 								<a href="#">по названию</a>
 							</li>
 							<li class="sort-item">
-								<button class="btn button-up" type="button">вниз</button>
+								<button class="btn button-down" type="button">вниз</button>
 							</li>
 							<li class="sort-item">
-								<button class="btn button-down" type="button">вверх</button>
+								<button class="btn button-up" type="button">вверх</button>
 							</li>
 						</ul>
 					 </div>
